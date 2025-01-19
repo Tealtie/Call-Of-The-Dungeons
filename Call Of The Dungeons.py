@@ -20,9 +20,9 @@ def fight():
 	global enemyHealth
 	damage = random.randint(5,7)
 	enemyHealth -= damage
-	print(f"Well Done!")
+	print(f"\nWell Done!")
 	print(f"You Dealt {damage} Damage!")
-	print(f"The Enemy Has {enemyHealth} HP Left!")
+	print(f"The Enemy Has {enemyHealth} HP Left!\n")
 
 def playerInput():
 	print(f"An Enemy Has Spawned With {enemyHealth} HP While You Have {playerHealth} HP")
@@ -34,8 +34,8 @@ def playerInput():
 			fight()
 			ask = False
 		else:
-			print('That Is Not A Valid Option!')
-			print('Try "Fight"')
+			print('\nThat Is Not A Valid Option!')
+			print('Try "Fight"\n')
 
 init()
 
