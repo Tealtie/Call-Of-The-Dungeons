@@ -1,0 +1,8 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#MainTitle{
+    width: 50%;
+    margin: auto;
+    font-size: 40px;
+}
