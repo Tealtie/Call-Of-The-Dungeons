@@ -24,6 +24,10 @@ def fight():
 	print(f"You Dealt {damage} Damage!")
 	print(f"The Enemy Has {enemyHealth} HP Left!\n")
 
+def run():
+	print("You Ran Away!")
+	exit()
+
 def playerInput():
 	print(f"An Enemy Has Spawned With {enemyHealth} HP While You Have {playerHealth} HP!")
 	ask = True
@@ -32,6 +36,9 @@ def playerInput():
 		choice =  choice.lower()
 		if choice == "fight":
 			fight()
+			ask = False
+		elif choice == "run":
+			run()
 			ask = False
 		else:
 			print('\nThat Is Not A Valid Option!')
