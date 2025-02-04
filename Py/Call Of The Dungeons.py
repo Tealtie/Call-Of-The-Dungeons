@@ -25,7 +25,7 @@ def fight():
 	print(f"The Enemy Has {enemyHealth} HP Left!\n")
 
 def playerInput():
-	print(f"An Enemy Has Spawned With {enemyHealth} HP While You Have {playerHealth} HP")
+	print(f"An Enemy Has Spawned With {enemyHealth} HP While You Have {playerHealth} HP!")
 	ask = True
 	while ask:
 		choice = input("What Do You Wish To Do?\n")
