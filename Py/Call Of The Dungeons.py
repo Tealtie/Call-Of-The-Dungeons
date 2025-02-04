@@ -42,7 +42,7 @@ def playerInput():
 			ask = False
 		else:
 			print('\nThat Is Not A Valid Option!')
-			print('Try "Fight"\n')
+			print('Try "Fight or "Run"\n')
 
 init()
 
