@@ -8,5 +8,5 @@ However, it's not quite complete.
 
 ##### I feel as if I'm miles away from reaching the end of this project.
 
-##### But I'm not giving up!
+##### But I'm not giving up.
 
