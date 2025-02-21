@@ -2,6 +2,10 @@ import random
 import sys
 
 def init():
+    play = input("Would You Like To Play Call Of The Dungeons? (y/n)\n")
+    play = play.lower()
+    if play == "n":
+        exit()
     print("\nWelcome To Call Of The Dungeons!")
     print("ver: 0.0.0.31\n")
     playerInit()
@@ -52,6 +56,7 @@ class mainloop():
         if len(sys.argv) > 1:
             choice = sys.argv[1]  # Get the first argument passed
         else:
-            # Set a default choice if no argument is passed
+            print("No Arguments Passed!")
+            print("Exiting...")
             exit()
         playerInput()
