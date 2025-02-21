@@ -1,10 +1,15 @@
 import random
 import sys
+from time import sleep as wait
 
 def init():
     play = input("Would You Like To Play Call Of The Dungeons? (y/n)\n")
     play = play.lower()
-    if play == "n":
+    if play == "y":
+        print("Loading...")
+    wait(1)
+    if play == None or play == "n":
+        print("Exiting...")
         exit()
     print("\nWelcome To Call Of The Dungeons!")
     print("ver: 0.0.0.31\n")
@@ -53,10 +58,4 @@ init()
 
 class mainloop():
     while main:
-        if len(sys.argv) > 1:
-            choice = sys.argv[1]  # Get the first argument passed
-        else:
-            print("No Arguments Passed!")
-            print("Exiting...")
-            exit()
         playerInput()
