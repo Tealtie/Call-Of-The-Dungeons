@@ -45,6 +45,9 @@ def run():
     exit()
 
 def playerInput():
+    if enemyHealth <= 0:
+        print("You Won!")
+        exit()
     print(f"An Enemy Has Spawned With {enemyHealth} HP While You Have {playerHealth} HP!")
     ask = True
     while ask:
