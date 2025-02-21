@@ -67,6 +67,7 @@ def run():
             exit()
 
 def playerInput():
+    global newEnemy  # Declare global to access newEnemy
     if enemyHealth <= 0:
         print("Enemy defeated!")
         spawnBasicEnemy()
